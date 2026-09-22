@@ -14,7 +14,7 @@
 
 ## Logical Model Diagram
 
-![Logical Model](logical_model.png)
+![Logical Model](logicalmodel.png)
 
 ---
 
