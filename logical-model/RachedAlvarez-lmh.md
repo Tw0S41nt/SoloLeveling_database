@@ -14,8 +14,7 @@
 
 ## Logical Model Diagram
 
-![Logical Model](<img width="1071" height="754" alt="image" src="https://github.com/user-attachments/assets/e86afe31-7e4c-497d-8d4d-760bff7ca699" />
-)
+![Logical Model](logical_model.png)
 
 ---
 
