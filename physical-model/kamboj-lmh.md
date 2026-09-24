@@ -2,8 +2,7 @@
 
 ![Physical Model Schema Diagram](../Physical_model.png)
 
-```dbml
-Table users {
+`Table users {
   user_id integer [pk, increment]
   name varchar(100) [not null]
   goal varchar(50)
@@ -47,7 +46,8 @@ Table template_exercises {
 
 Ref: templates.user_id > users.user_id [delete: cascade]
 Ref: template_exercises.template_id > templates.template_id [delete: cascade]
-Ref: template_exercises.exercise_id > exercises.exercise_id [delete: cascade]
+Ref: template_exercises.exercise_id > exercises.exercise_id [delete: cascade]`
+
 ## Group Logical Model Link
 * [Group Logical Model](../Logical_model.png)
 
