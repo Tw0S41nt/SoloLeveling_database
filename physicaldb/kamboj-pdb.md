@@ -70,7 +70,8 @@ CREATE TABLE users (
     glutes TINYINT,
     calves TINYINT,
     hamstrings TINYINT
-);```
+);
+```
 
 ### `02_create_exercises.sql`
 ```sql
@@ -121,4 +122,5 @@ CREATE TABLE template_exercises (
     CONSTRAINT fk_te_exercises 
         FOREIGN KEY (exercise_id) REFERENCES exercises(exercise_id) 
         ON DELETE CASCADE
-);```
+);
+```
