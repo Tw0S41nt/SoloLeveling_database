@@ -3,7 +3,7 @@ version: '3.8'
 services:
   mariadb:
     image: mariadb:latest
-    container_name: WSU_4900_DB_Design
+    container_name: SoloFit
     restart: always
     volumes:
       - ./script.sql:/docker-entrypoint-initdb.d/init.sql
@@ -14,4 +14,4 @@ services:
       - MYSQL_USER=user
       - MYSQL_PASSWORD=password
     ports:
-      - 3306:3306
+      - 999:3306
