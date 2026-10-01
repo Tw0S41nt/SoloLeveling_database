@@ -1,5 +1,5 @@
 Group physical model:
-![alt text](../Physical_model.png)
+![alt text](/physical-model/Physical_model.png)
 
 Group's physical database:
 [Link to script](https://github.com/Tw0S41nt/SoloLeveling_database/blob/main/script.sql)
