@@ -1,12 +1,11 @@
-SQL queries for your group project theme:
-
-```
+# SQL queries for your group project theme:
+```sql
 SELECT *
 FROM exercises;
 ```
 Description: Returns all exercises
 
-```
+```sql
 SELECT COUNT(*) AS total_users
 FROM users;
 ```
