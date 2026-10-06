@@ -1,0 +1,45 @@
+Table users {
+  user_id integer [pk, increment, not null]
+  name varchar(50) [not null]
+  goal varchar(50)
+  chest tinyint [default: 0]
+  biceps tinyint [default: 0]
+  triceps tinyint [default: 0]
+  traps tinyint [default: 0]
+  delts tinyint [default: 0]
+  back tinyint [default: 0]
+  quads tinyint [default: 0]
+  glutes tinyint [default: 0]
+  calves tinyint [default: 0]
+  hamstrings tinyint [default: 0]
+}
+
+Table templates {
+  template_id integer [pk, increment, not null]
+  day varchar(10) [not null]
+  user_id integer [not null]
+}
+
+Table exercises {
+  exercise_id integer [pk, increment, not null]
+  name varchar(50) [not null]
+  description varchar(1000)
+  image varchar(255)
+  video varchar(255)
+  body_part varchar(20)
+  primary_muscle varchar(20)
+  secondary_muscle varchar(20)
+}
+
+Table template_exercises {
+  template_id integer [not null]
+  exercise_id integer [not null]
+
+  indexes {
+    (template_id, exercise_id) [pk]
+  }
+}
+
+Ref: templates.user_id > users.user_id
+Ref: template_exercises.template_id > templates.template_id
+Ref: template_exercises.exercise_id > exercises.exercise_id
