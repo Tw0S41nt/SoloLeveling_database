@@ -31,7 +31,6 @@ CREATE TABLE templates (
     user_id INT NOT NULL,
     CONSTRAINT fk_templates_users 
         FOREIGN KEY (user_id) REFERENCES users(user_id) 
-        ON DELETE CASCADE
 );
 
 CREATE TABLE template_exercises (

@@ -6,7 +6,7 @@
 2. Open a terminal
 3. `cd` into the directory with `docker-compose.yml`
 4. Run `docker compose up`
-  - `up` will start a container per your instructions in the docker compose file including intializing the DB with your script
+  - `up` will start a container per your instructions in the docker compose file including initializing the DB with your script
   - You may Ctrl+C out of this - it will stop the container
   - `docker compose start` will start the container running again
 5. `docker compose down` will end AND remove the container process.  You don't want to run this unless you are ready to blow away your DB and all its data.
@@ -18,8 +18,8 @@ If `docker` does not recognize `compose` or if `docker-compose` is not found, yo
 sudo apt install docker-compose
 ```
 Then:
+# as required
 ```
-#as required
 docker-compose up
 docker-compose down
 ```
@@ -36,7 +36,9 @@ docker-compose down
 
 3. Click MariaDB, then Next 
 
-4. The only thing you’ll need to change here is username, port and password
+4. The only thing you’ll need to change here is username, port and password.
+
+    SoloFit database info:
 
     Username: user  
     Password: password
