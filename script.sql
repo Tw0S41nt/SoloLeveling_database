@@ -27,7 +27,7 @@ CREATE TABLE exercises (
 
 CREATE TABLE templates (
     template_id INT AUTO_INCREMENT PRIMARY KEY,
-    day_of_week VARCHAR(12) NOT NULL,
+    day_of_week VARCHAR(10) NOT NULL,
     user_id INT NOT NULL,
     CONSTRAINT fk_templates_users 
         FOREIGN KEY (user_id) REFERENCES users(user_id) 
