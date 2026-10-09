@@ -5,16 +5,16 @@ Welcome to the central database repository for **SoloFit**. This repository cont
 ## Repository Structure
 
 ```text
-
-├── DATABASE/
+.
+├── DATABASE/     
 │   ├── Models/
 │   │   ├── Conceptual Model/
 │   │   │   └── Conceptual_Model.png
 │   │   ├── Logical Model/
 │   │   │   └── Logical_model.png
 │   │   ├── Physical Model/
-│   │   │   ├── physical_model.dbml
-│   │   │   └── Physical_Model.png
+│   │   │   └── physical_model.dbml
+│   │   │   └── physical_model.png
 │   │   └── README.md
 │   │
 │   ├── Table initialization/
@@ -25,8 +25,17 @@ Welcome to the central database repository for **SoloFit**. This repository cont
 │   └── Business Queries/
 │       └── business_queries.md
 │
-└── README.md
+├── physical-model/                   # Draft physical model assets
+├── sql_queries/                      # Draft Business SQL queries
+├── Conceptual_Model.png              # Draft conceptual diagram
+├── Logical_model.png                 # Draft logical diagram
+├── compose.yml                       # Draft Docker Compose configuration
+├── script.sql                        # Draft database initialization script
+└── README.md                         # Main repository documentation
 ```
+
+**Note:** The files and folders at the repository root are working copies and are not the final submission. The finalized database models, initialization scripts, and business queries are maintained in the `DATABASE/` directory.
+
 
 ## Quick Start Guide
 
